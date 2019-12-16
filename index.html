@@ -50,29 +50,6 @@
 <button type="button" class="btn btn-success btn-lg btn-block" onclick="window.location.href = 'http://192.168.43.4/';" >
                     Unlock   <span class="glyphicon glyphicon-chevron-right"></span>
                 </button></td>
-
-								<script src="https://smtpjs.com/v3/smtp.js"></script>
-									<script type="text/javascript">
-										function sendEmail() {
-											Email.send({
-												Host: "clics.enterprise@gmail.com",
-												Username : "clics.enterprise@gmail.com",
-												Password : "20122019",
-												To : 'xinyiwoon98@gmail.com"',
-												From : "clics.enterprise@gmail.com",
-												Subject : "Clamp UNLOCK!",
-												Body : "Hi",
-											})
-											.then(function(message){
-												alert("mail sent successfully")
-											});
-										}
-									</script>
-
-									<form method="post">
-										<input type="button" value="Send Email" onclick="sendEmail()"/>
-									</form>
-
 </body>
 
 </html>
