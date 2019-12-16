@@ -51,7 +51,33 @@
                     Unlock   <span class="glyphicon glyphicon-chevron-right"></span>
                 </button></td>
 
-
+								<script src="https://smtpjs.com/v3/smtp.js"></script>
+									<script type="text/javascript">
+										function sendEmail() {
+											Email.send({
+												Host: "clics.enterprise@gmail.com",
+												Username : "clics.enterprise@gmail.com",
+												Password : "20122019",
+												To : 'clics.enterprise@gmail.com"',
+												From : "clics.enterprise@gmail.com",
+												Subject : "Clamp UNLOCK!",
+												Body : "",
+												<p id="welcome"> </p>
+														window.onload = function() {
+																document.getElementById('welcome').innerText = sessionStorage.getItem('userclamps')
+																+"\n Unlock"  ;
+														};
+											})
+											.then(function(message){
+												alert("mail sent successfully")
+											});
+										}
+									</script>
+								</head>
+								<body>
+									<form method="post">
+										<input type="button" value="Send Email" onclick="sendEmail()"/>
+									</form>
 
 </body>
 
