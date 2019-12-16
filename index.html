@@ -61,20 +61,14 @@
 												To : 'clics.enterprise@gmail.com"',
 												From : "clics.enterprise@gmail.com",
 												Subject : "Clamp UNLOCK!",
-												Body : "",
-												<p id="welcome"> </p>
-														window.onload = function() {
-																document.getElementById('welcome').innerText = sessionStorage.getItem('userclamps')
-																+"\n Unlock"  ;
-														};
+												Body : "Hi",
 											})
 											.then(function(message){
 												alert("mail sent successfully")
 											});
 										}
 									</script>
-								</head>
-								<body>
+
 									<form method="post">
 										<input type="button" value="Send Email" onclick="sendEmail()"/>
 									</form>
