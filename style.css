@@ -3,56 +3,19 @@
 	margin: 0;
 	padding: 0;
 }
-/*
-body {
-  	background-color: #DADFF0;
-}*/
 
 
 center
 {
-
+	position:relative;
 	color: black;
-	font-size: 70px;
 	text-allign: center;
 		border: 2px solid black;
 }
-
-.main-nav
+.container-fluid
 {
-		margin-top: 3%;
-	list-style: none;
-		margin-left: 5%;
-		margin-right: 5%;
+	  background-color:  #4863C9;
 }
-
-.main-nav li
-{
-	display: block;
-	 background-color: yellow;
-	border: 2px solid black;
-}
-
-.main-nav li a
-{
-	color: black;
-	padding: 5px 30px;
-	font-family: "Roboto", times-new-roman;
-	font-size: 20px;
-}
-
-
-.main-nav li a:hover
-{
-	border: 7px solid red;
-}
-
-
-.topnav {
-  background-color: #4863C9;
-  overflow: hidden;
-}
-
 .center img{
   display: block;
   margin-left: auto;
@@ -75,50 +38,62 @@ center
   	padding: 20px 0 20px 0;
   	border-bottom: 1px solid #dee0e4;
 }
-
 .login form {
   	display: flex;
   	flex-wrap: wrap;
   	justify-content: center;
   	padding-top: 20px;
 }
+.login form label {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+  	height: 50px;
+  	background-color: #3274d6;
+  	color: #ffffff;
+}
+
+.login form input[type="submit"] {
+  	width: 100%;
+  	padding: 15px;
+ 	margin-top: 20px;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+
+.login form input[type="submit"]:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+.login form input[type="NRIC"], .login form input[type="text"] {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
 
 @media only screen and (max-width:800px) {
   /* For tablets:*/
-  .main {
+  .center img {
     width: 80%;
     padding: 0;
   }
-  .right {
-    width: 100%;
-  }
+
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones:*/
-  .menu, .main, .right {
-    width: 100%;
+  .center img {
+    width: 70%;
   }
-}
-
-#somethingorother {
-  width: 800px ;
-}
-
-@media screen and (max-width: 320px) {
-  /* comes into effect for screens less than or equal to 320 pixels */
-  #somethingorother {
-    width: 120px ;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-  #somethingorother {
-    width: 320px ;
-  }
-}
-@media screen and (min-width: 481px) {
-  /* comes into effect for screens larger than or equal to 481 pixels */
-  #somethingorother {
-    width: 480px ;
-  }
+	.login,
+	.login form input[type="NRIC"], .login form input[type="text"]{
+		width: 60%;
+	}
 }
